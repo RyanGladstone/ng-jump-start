@@ -10,7 +10,8 @@ This is a launch pad. A convenient starting place. The main branch is a simple A
 
 - Install Node (if you haven't already)
 	- [Download Node](http://nodejs.org/download/)	
-- Install Grunt (if you haven't already)
+- Install Grunt globally (if you haven't already)
+	- ```npm install -g grunt-cli```
 - Clone the repo
 	- ```$ git clone <https://github.com/RyanGladstone/ng-jump-start.git>```  
 - Move into the folder
@@ -18,7 +19,7 @@ This is a launch pad. A convenient starting place. The main branch is a simple A
 - Install packages
 	- ```$ npm install```
 - start grunt build and watch
-	- grunt
+	- ```$ grunt```
 - build something great
 
 
