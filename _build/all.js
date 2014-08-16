@@ -2,7 +2,9 @@
 
 // App definition + dependencies
 var myApp = angular.module('myApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate',
+    'mgcrea.ngStrap'
     ]);
 
 // Route definition 
@@ -20,5 +22,9 @@ myApp.config(['$routeProvider',
 myApp.controller('homeController',
     ['$scope', '$routeParams',
         function ($scope, $routeParams) {
+            $scope.modal = {
+              "title": "Modal Title Goes Here",
+              "content": "Hello Modal<br />This is a multiline message!"
+            };
         }
 ]);

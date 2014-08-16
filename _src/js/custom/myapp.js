@@ -2,7 +2,9 @@
 
 // App definition + dependencies
 var myApp = angular.module('myApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate',
+    'mgcrea.ngStrap'
     ]);
 
 // Route definition 
