@@ -17,8 +17,3 @@ myApp.config(['$routeProvider',
 				redirectTo: '/home'
 			});
 }]);
-myApp.controller('homeController',
-    ['$scope', '$routeParams',
-        function ($scope, $routeParams) {
-        }
-]);
