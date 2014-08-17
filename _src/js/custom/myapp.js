@@ -8,8 +8,11 @@ var myApp = angular.module('myApp', [
     ]);
 
 // Route definition 
-myApp.config(['$routeProvider',
-    function ($routeProvider) {
+myApp.config(['$routeProvider', '$locationProvider', 
+    function ($routeProvider, $locationProvider) {
+        
+        $locationProvider.html5Mode(true);
+        
         $routeProvider
             .when('/home', {
                 templateUrl: 'views/home.html',

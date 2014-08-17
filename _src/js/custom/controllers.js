@@ -5,5 +5,11 @@ myApp.controller('homeController',
               "title": "Modal Title Goes Here",
               "content": "Hello Modal<br />This is a multiline message!"
             };
+
+            // Sample Directive data
+            $scope.customer = {
+                name: 'Tom'
+            };
+            
         }
 ]);

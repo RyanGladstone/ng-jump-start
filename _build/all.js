@@ -8,8 +8,11 @@ var myApp = angular.module('myApp', [
     ]);
 
 // Route definition 
-myApp.config(['$routeProvider',
-    function ($routeProvider) {
+myApp.config(['$routeProvider', '$locationProvider', 
+    function ($routeProvider, $locationProvider) {
+        
+        $locationProvider.html5Mode(true);
+        
         $routeProvider
             .when('/home', {
                 templateUrl: 'views/home.html',
@@ -26,5 +29,21 @@ myApp.controller('homeController',
               "title": "Modal Title Goes Here",
               "content": "Hello Modal<br />This is a multiline message!"
             };
+
+            // Sample Directive data
+            $scope.customer = {
+                name: 'Tom'
+            };
+            
         }
 ]);
+
+myApp.directive('sampleDirective',
+        function () {
+            return {
+                restrict: 'AE', // attribute or element
+                //scope: {}, // isolate scope
+                template: '<h1>{{ customer.name }}</h1>'
+            }
+        }
+);

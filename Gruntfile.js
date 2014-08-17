@@ -10,7 +10,9 @@ module.exports = function(grunt) {
                 src: [
                     '_src/js/libs/*.js', // All JS in the libs folder
                     '_src/js/custom/myapp.js',
-                    '_src/js/custom/controllers.js'
+                    '_src/js/custom/controllers.js',
+                    '_src/js/custom/directives.js'
+                    
                 ],
                 dest: '_build/all.js'
             }, 
